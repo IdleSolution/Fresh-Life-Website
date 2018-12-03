@@ -2,6 +2,7 @@
     height: 100vh;
     background-image: url("./../imgs/header-background.jpeg");
     background-size: cover;
+    position: relative;
 
     @include respond(1200px) {
         display: flex;

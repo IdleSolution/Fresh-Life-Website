@@ -1,10 +1,12 @@
 .down-arrow {
+    color: white;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 10rem;
     cursor: pointer;
+    height: 10%;
 
     @include respond(900px) {
         width: 7rem;
