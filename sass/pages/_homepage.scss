@@ -5,6 +5,10 @@
     transform: translateX(-50%);
     width: 10rem;
     cursor: pointer;
+
+    @include respond(900px) {
+        width: 7rem;
+    }
 }
 
 .about {
@@ -225,6 +229,11 @@
             width: 45%;
             font-size: 1.4rem;
         }
+
+        @include respond(600px) {
+            width: 60%;
+            font-size: 1.5rem;
+        }
     }
 
 
@@ -253,6 +262,14 @@
     &__text {
         width: 40%;
         font-weight: 0;
+
+        @include respond(600px) {
+            text-align: center;
+        }
+
+        @include respond(500px) {
+            width: 60%;
+        }
     }
 
     &__input {
@@ -312,6 +329,10 @@
         text-align: center;
         font-size: 1.6rem;
         font-weight: 100;
+
+        @include respond(600px) {
+            width: 70%;
+        }
     }
 
     &__cards-container {
@@ -417,7 +438,7 @@
 }
 
 .contact {
-    height: 90vh;
+    padding-bottom: 15%;
     position: relative;
     text-align: center;
 
@@ -458,12 +479,17 @@
         @include respond(1200px) {
             font-size: 1.8rem;
         }
+
+        @include respond(600px) {
+            width: 50%;
+        }
     }
 
     &__main-container {
         display: flex;
         justify-content: center;
         height: 60%;
+        height: 100%;
 
 
     @include respond(800px) {
@@ -477,6 +503,7 @@
         flex-flow: column;
         width: 30%;
         margin-right: 10%;
+        height: 100%;
 
         @include respond(800px) {
             margin: 0;
@@ -527,13 +554,12 @@
     }
 
     &__message {
-        height: 40%;
         font-weight: 700;
         resize: none;
+        height: 20rem;
 
         @include respond(800px) {
-            height: 100%;
-            padding: 4rem 1rem;
+            height: 20rem;
         }
     }
 
