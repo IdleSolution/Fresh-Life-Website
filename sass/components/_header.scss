@@ -40,7 +40,9 @@
         &--main {
             font-family: 'Oswald', sans-serif;
             font-size: 6rem;
-            animation: fadeLeft .75s ease-out;
+            animation: fadeLeft .75s ease-out .3s;
+            animation-fill-mode: backwards;
+
 
             @include respond(1200px) {
                 font-size: 8rem;
@@ -59,7 +61,8 @@
         &--desc {
             font-size: 1.3rem;
             font-weight: normal;
-            animation: fadeRight .75s ease-out;
+            animation: fadeRight .75s ease-out .3s;
+            animation-fill-mode: backwards;
 
             @include respond(1200px) {
                 font-size: 1.5rem;
@@ -86,8 +89,8 @@
         box-shadow: none;
         border: none;
         cursor: pointer;
-        box-shadow: 0 1rem 2rem rgba($color-black, .2);
-        animation: fadeBottom .5s ease-out .75s;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        animation: fadeBottom .5s ease-out 1.05s;
         animation-fill-mode: backwards;
         transition: all .2s;
         position: relative;

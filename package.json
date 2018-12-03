@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.10.0"
+    "autoprefixer": "^9.4.0",
+    "node-sass": "^4.10.0",
+    "postcss-cli": "^6.0.1"
   }
 }
