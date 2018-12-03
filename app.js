@@ -12,9 +12,19 @@ const galleryNav = document.querySelector('#galleryNav');
 const blogNav = document.querySelector('#blogNav');
 const contactNav = document.querySelector('#contactNav');
 
-console.log(gallery)
-console.log(gallery.offsetTop);
+
+let prevScrollPos = window.pageYOffset;
+
 window.onscroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    if(prevScrollPos > currentScrollPos) {
+        document.querySelector('.navbar').style.top = '0';
+    } else {
+        document.querySelector('.navbar').style.top = '-10rem';
+    }
+
+    prevScrollPos = currentScrollPos;
+
     if(window.scrollY + 100 >= home.offsetTop && window.scrollY + 100 <= (home.offsetTop + home.offsetHeight)) {
         homeNav.style.borderTop = '2px solid orangered';
     } else {
