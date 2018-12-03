@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|K2D|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <nav class='navbar'>
+        <p class='navbar__icon'>Cakee</p>
+        <div class='navbar__navigation'>
+            <a href="#home" class="navbar__navigation-item" id='homeNav'>HOME</a>
+            <a href="#about" class="navbar__navigation-item" id='aboutNav'>ABOUT</a>
+            <a href="#services" class="navbar__navigation-item" id='servicesNav'>SERVICES</a>
+            <a href="#gallery" class="navbar__navigation-item" id='galleryNav'>GALLERY</a>
+            <a href="#blog" class="navbar__navigation-item" id='blogNav'>BLOG</a>
+            <a href="#contact" class="navbar__navigation-item" id='contactNav'>CONTACT</a>
+        </div>
+    </nav>
+
+    <header class='header' id='home'>
+        <div class='header__main'>
+            <h1 class='header__heading'>
+                <span class='header__heading--main'>Fresh Life</span>
+                <span class='header__heading--desc'>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores laudantium id tenetur hic rem adipisicing sads polser? Kassas lorem pol.
+                </span>
+            </h1>
+            <button class='header__btn'>GET FREE NOW</button>
+        </div>
+
+        <a href='#about'><svg class="down-arrow">
+            <use xlink:href="#lnr-chevron-down"></use>
+        </svg></a>
+    </header>
+
+    <main>
+        <section class='about' id='about'>
+            <img class='about__img' src="imgs/strawberries.png" alt="Picture of strawberries">
+            
+            <div class="about__main">
+                <h2 class='heading__secondary heading__secondary--white margin-bottom-small about__heading'>About Us</h2>
+                <p class='about__info margin-bottom-small'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis in itaque sequi assumenda repudiandae rem exercitationem debitis delectus nesciunt, nulla illo ipsa placeat rerum dolore repellendus numquam dolores inventore. Libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, a dolore. Quibusdam eum eius in ex maiores necessitatibus, nulla facere delectus sed quos ipsam perferendis minus id officiis assumenda est.</p>
+                <p class='about__info'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, harum. Ducimus explicabo animi quo impedit eum fuga consequuntur laudantium voluptas sed possimus, commodi asperiores distinctio nisi molestias quasi qui hic? Lorem ipsum dolor sit amet co.</p>
+            </div>
+        </section>
+
+        <section class='services' id='services'>
+            <div class='services__perks-container'>
+                <div class="services__perk">
+                    <p class='services__perk-description'>Online Shopping</p>
+                    <svg class='services__icon'>
+                        <use xlink:href="#lnr-cart"></use>
+                    </svg>
+                </div>
+
+                <div class="services__perk">
+                    <p class='services__perk-description'>Quality Product</p>
+                    <svg class='services__icon'>
+                        <use xlink:href="#lnr-magic-wand"></use>
+                    </svg>
+                </div>
+
+                <div class="services__perk">
+                    <p class='services__perk-description'>Domestic & International Delivery</p>
+                    <svg class='services__icon'>
+                        <use xlink:href="#lnr-rocket"></use>
+                    </svg>
+                </div>
+
+                <div class="services__perk">
+                    <p class='services__perk-description'>Well Organized</p>
+                    <svg class='services__icon'>
+                        <use xlink:href="#lnr-thumbs-up"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="services__img-container">
+                <img src="imgs/tomatoes.png" alt="Picture of fruits" class='services__img'>
+                <h2 class='heading__secondary heading__secondary--white services__heading'>Our Services</h2>
+            </div>
+        </section>
+
+        <section class='gallery' id='gallery'>
+            <h2 class='heading__secondary heading__secondary--black margin-bottom-small'>Gallery</h2>
+            <p class='gallery__info margin-bottom-medium'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis minima distinctio, mollitia officiis obcaecati esse nemo ad quas iusto quasi, saepe beatae placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatem doloremque fuga ut soluta deleniti ipsum impedit dolores expedita repellat.</p>
+            <div class='gallery__container'>
+                <div class="gallery__photo-container gallery__container--1">
+                    <img class="gallery__photo gallery__photo--1" srcset="imgs/gallery/4-big.jpeg 950w imgs/gallery/4.jpeg 640w, imgs/gallery/4-small.jpeg 300w"
+                                                                  sizes='(max-width: 900px) 125px, (max-width: 1300px) 190px, 270px'
+                        >
+                </div>
+
+                <div class="gallery__photo-container gallery__container--2">
+                    <img class="gallery__photo gallery__photo--2" srcset="imgs/gallery/2-big.jpeg 950w, imgs/gallery/2.jpeg 640w, imgs/gallery/2-small.jpeg 300w"
+                                                                  sizes='(max-width: 900px) 400px, (max-width: 1300px) 600px, 840px'
+                        >
+                </div>
+
+                <div class="gallery__photo-container gallery__container--3">
+                    <img class="gallery__photo gallery__photo--3" srcset="imgs/gallery/1-big.jpeg 950w, imgs/gallery/1.jpeg 640w, imgs/gallery/1-small.jpeg 300w"
+                                                                  sizes='(max-width: 900px) 125px, (max-width: 1300px) 190px, 270px'
+                        >
+                </div>
+
+                <div class="gallery__photo-container gallery__container--4">
+                    <img class="gallery__photo gallery__photo--4" srcset="imgs/gallery/3-big.jpeg 900w, imgs/gallery/3.jpeg 640w, imgs/gallery/3-small.jpeg 300w"
+                                                                  sizes='(max-width: 900px) 260px, (max-width: 1300px) 390px, 560px'
+                        >
+                </div>
+
+                <div class="gallery__photo-container gallery__container--5">
+                    <img class="gallery__photo gallery__photo--5" srcset="imgs/gallery/5-big.jpeg 950w, imgs/gallery/5.jpeg 640w, imgs/gallery/5-small.jpeg 300w"
+                                                                  sizes='(max-width: 900px) 260px, (max-width: 1300px) 390px, 560px'
+                        >
+                </div>
+            </div>
+        </section>
+
+        <section class='subscribe' id='subscribe'>
+            <h3 class='heading__tertiary heading__tertiary--black margin-bottom-small'>Subscribe To Us</h3>
+            <p class='subscribe__text margin-bottom-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sit tenetur quae recusandae fugiat quas, itaque quidem saepe asperiores voluptatibus quis nobis ducimus.</p>
+            <div class="subscribe__input-container">
+                <input type="text" placeholder="Your email adress" class='subscribe__input'>
+                <button class='subscribe__btn header__btn'>Subscribe</button>
+            </div>
+        </section>
+
+        <section class='blog' id='blog'>
+            <div class='blog__header'>
+                <h2 class='heading__secondary heading__secondary--white margin-bottom-small'>Blog</h2>
+                <p class='blog__info margin-bottom-medium'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, labore? Porro quibusdam quaerat velit, reiciendis in dicta facilis sit officia, esse, unde blanditiis! Dolorem repellendus consectetur saepe molestiae nisi a.
+                </p>
+
+                <div class="blog__cards-container margin-bottom-medium">
+                    <div class="blog__card blog__card--1">
+                        <div class="blog__date">20 <span class='another-line'>NOV</span></div>
+                        <h4 class="blog__card-heading">Green Smoothies: Too much of a good thing?</h4>
+                        <p class='blog__who'>By Auskteez - 2 hours ago</p>
+                        <img class='blog__img' src="./../imgs/blog-1.png" alt="Picture of blog">
+                    </div>
+
+                    <div class="blog__card blog__card--2">
+                        <div class="blog__date">14<span class='another-line'>NOV</span></div>
+                        <h4 class="blog__card-heading">Growing food and a "Thirst" for innovation</h4>
+                        <p class='blog__who'>By Auskteez - 3 hours ago</p>
+                        <img class='blog__img' src="./../imgs/blog-2.png" alt="Picture of blog">
+                    </div>
+
+                    <div class="blog__card blog__card--3">
+                        <div class="blog__date">10<span class='another-line'>NOV</span></div>
+                        <h4 class="blog__card-heading">Pesticides & Food: What You Need to Know</h4>
+                        <p class='blog__who'>By Auskteez - 6 hours ago</p>
+                        <img class='blog__img' src="./../imgs/blog-3.png" alt="Picture of blog">
+                    </div>
+
+                </div>
+                <button class='header__btn blog__btn'>View More</button>
+            </div>
+        </section>
+
+        <section class='contact' id='contact'>
+            <div class="contact__background">
+                <img srcset="./imgs/contact-background-big.jpeg 1920w, ./imgs/contact-background-medium.jpeg 1280w, ./imgs/contact-background-small.jpeg 640w"
+                     sizes='(max-width: 640px) 620px, (max-width: 1300px) 1280px, (max-width: 1800px) 1780px'
+                     alt="background" class="contact__img">
+            </div>
+
+            <div class='contact__header margin-bottom-medium'>
+                <h2 class='contact__heading heading__secondary heading__secondary--black margin-bottom-medium'>Contact</h2>
+                <p class='contact__desc'>
+                    For new projects ideas, business or anything you'd like to discuss, contact with me!
+                </p>
+            </div>
+
+            <div class="contact__main-container">
+                <div class="contact__form">
+                    <input type="text" placeholder="Your name..." class='contact__input margin-bottom-small'>
+                    <input type="text" placeholder="Your email..." class='contact__input margin-bottom-small'>
+                    <input type="text" placeholder="Your phone number..." class='contact__input margin-bottom-small'>
+                    <textarea class='contact__input contact__message' placeholder="Your message..."></textarea>
+                    
+                </div>
+            
+                <div class="contact__info">
+                    <p class='contact__info-certain margin-bottom-small'>Adress <span class='another-line contact__info-desc'>123 City name, Street, City, Country</span></p>
+                    <p class='contact__info-certain margin-bottom-small'>Email <span class='another-line contact__info-desc'>cahee@domain.com</span></p>
+                    <p class='contact__info-certain margin-bottom-small'>Phone <span class='another-line contact__info-desc'>+012 345 6789</span></p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class='footer'>
+        <p class='footer__rights'>2019 Company. All rights reserved.</p>
+        <p class='navbar__icon footer__icon'>Cake</p>
+        <p class='footer__rights'>Made by IdleSolution.</p>
+    </footer>
+
+    <script src='app.js'></script>
+</body>
+</html>

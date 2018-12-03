@@ -1,0 +1,24 @@
+.services__perk {
+    background: $color-white;
+    height: 8rem;
+    width: 100%;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &-description {
+        font-size: 1.6rem;
+        font-weight: 700;
+        width: 80%;
+        text-align: center;
+    }
+
+    @include respond(510px) {
+        height: 10rem;
+    }
+}

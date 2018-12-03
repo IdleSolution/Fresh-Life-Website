@@ -1,0 +1,22 @@
+.heading {
+    font-family: 'Oswald', sans-serif;
+    &__secondary {
+        font-size: 10rem;
+
+        &--white {
+            color: $color-white;
+        }
+
+        &--black {
+            color: $color-black;
+            font-weight: 300;
+        }
+    }
+
+    &__tertiary {
+        font-size: 6rem;
+        font-weight: 200;
+    }
+
+
+}
