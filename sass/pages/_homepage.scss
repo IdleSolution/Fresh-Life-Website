@@ -184,7 +184,10 @@
     align-items: center;
     flex-flow: column;
     background: rgb(241, 222, 49);
+
+    
     &__container {
+        /* autoprefixer grid: autoplace */
         display: grid;
         width: 65%;
         grid-template-columns: repeat(4, 1fr);
