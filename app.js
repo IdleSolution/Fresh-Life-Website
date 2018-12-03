@@ -12,18 +12,21 @@ const galleryNav = document.querySelector('#galleryNav');
 const blogNav = document.querySelector('#blogNav');
 const contactNav = document.querySelector('#contactNav');
 
+const mobileViewport = window.matchMedia("screen and (max-width: 600px)");
 
 let prevScrollPos = window.pageYOffset;
 
 window.onscroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    if(prevScrollPos > currentScrollPos) {
-        document.querySelector('.navbar').style.top = '0';
-    } else {
-        document.querySelector('.navbar').style.top = '-10rem';
+    if(mobileViewport.matches) {
+        const currentScrollPos = window.pageYOffset;
+        if(prevScrollPos > currentScrollPos) {
+            document.querySelector('.navbar').style.top = '0';
+        } else {
+            document.querySelector('.navbar').style.top = '-10rem';
+        }
+    
+        prevScrollPos = currentScrollPos;
     }
-
-    prevScrollPos = currentScrollPos;
 
     if(window.scrollY + 100 >= home.offsetTop && window.scrollY + 100 <= (home.offsetTop + home.offsetHeight)) {
         homeNav.style.borderTop = '2px solid orangered';
