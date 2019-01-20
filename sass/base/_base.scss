@@ -24,8 +24,6 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'K2D', sans-serif;
-    // padding: 0 4rem;
-    padding-left: 1.6rem;
 
     @include respond(900px) {
         padding: 0;
